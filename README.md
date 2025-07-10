@@ -14,7 +14,7 @@ Nesse link principal, após o login, irá aparecer todos os outros links necess�
 O projeto foi desenvolvido no VSCode, então o ideal é clonar o arquivo e rodar na mesma IDE.
 Para rodar, precisa colocar no terminal o seguinte comando: <b>mvn spring-boot:run</b>
 
-Requisitos:
-<b>Java JDK 17</b>
-<b>MySQL 8.0+</b>
+Requisitos:<br>
+<b>Java JDK 17</b><br>
+<b>MySQL 8.0+</b><br>
 <b>Maven 3.8+</b>
