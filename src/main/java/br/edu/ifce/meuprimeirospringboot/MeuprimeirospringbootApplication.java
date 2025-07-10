@@ -35,8 +35,8 @@ public class MeuprimeirospringbootApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         Usuario u = new Usuario();
         u.setCpf("00000000000");
-        u.setNome("Fulano de Tal");
-        u.setEmail("fulano@gmail.com");
+        u.setNome("Teste 1");
+        u.setEmail("admin@gmail.com");
         u.setRaca(Raca.Indígena);
         u.setDtNascimento(new Date());
         u.setPassword(passwordEncoder.encode("T@ylor13"));

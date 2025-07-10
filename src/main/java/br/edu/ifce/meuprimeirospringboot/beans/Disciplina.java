@@ -26,7 +26,6 @@ public class Disciplina {
     @ManyToMany(mappedBy = "disciplinas")
     private List<Usuario> alunos;
 
-    // Getters e Setters
     public Long getId() {
         return id;
     }

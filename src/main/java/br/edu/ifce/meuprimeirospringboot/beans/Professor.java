@@ -23,7 +23,6 @@ public class Professor {
     @OneToMany(mappedBy = "professor")
     private List<Turma> turmas;
 
-    // Getters e Setters
     public Long getId() {
         return id;
     }

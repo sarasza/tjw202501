@@ -1,16 +1,11 @@
 package br.edu.ifce.meuprimeirospringboot.beans;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
+import java.util.List;
 
 @Entity
 public class Turma {
-    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -26,7 +21,9 @@ public class Turma {
     @ManyToOne
     private Professor professor;
 
-    // Getters e Setters
+    @OneToMany(mappedBy = "turma", cascade = CascadeType.ALL)
+    private List<Matricula> matriculas;
+
     public Long getId() {
         return id;
     }
@@ -59,4 +56,11 @@ public class Turma {
         this.professor = professor;
     }
 
+    public List<Matricula> getMatriculas() {
+        return matriculas;
+    }
+
+    public void setMatriculas(List<Matricula> matriculas) {
+        this.matriculas = matriculas;
+    }
 }

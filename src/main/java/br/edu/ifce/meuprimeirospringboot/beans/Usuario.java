@@ -71,7 +71,6 @@ public class Usuario {
     )
     private List<Role> roles;
 
-    // Getters e Setters
     public Long getId() {
         return id;
     }
